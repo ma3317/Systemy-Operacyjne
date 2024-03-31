@@ -1,0 +1,44 @@
+1. Napisać własne polecenie powłoki systemu mycommand, które działa w następujący sposób:
+$ mycommand
+Today is Fri Mar 3 01:37:04 AEDT 2023.
+You are in /home/user @ hostname
+Oczywiście data, ścieżka i hostname powinny być aktualne. Proszę dodać komentarz co robi dany
+skrypt i pamiętać, że powinien być wykonywany przez powłokę /bin/bash
+
+2. Napisać skrypt powłoki iknowhowposargswork który przyjmuje dwa parametry pozycyjne z cli
+(command line interface) oraz przypisać je do odpowiednio do zmiennych FOO i BAR. Skrypt
+powinien oczywiście przyjmować dowolnie dużą liczbę argumentów i działać w następujący
+sposób:
+$ iknowhowposargswork war is NOT special operation
+You give me 5 parameters: war is NOT special operation
+The first two are: war, is
+
+3. Napisać skrypt powłoki iknowhowtoprompt który zapyta użytkownika o imię i ulubiony
+przedmiot którego używa:
+$ iknowhowtoprompt
+What is your name? Piotr
+What is your favorite course? NODE
+I know that Piotr’s favorite course is NODE.
+
+4. Napisać skrypt powłoki iknowhowtoif który zapyta użytkownika o ulubiony system operacyjny.
+Dla systemów Windows, MacOS i Linux wypisze odpowiednie informacje, dla pozostałych nazw
+zapyta, czy podany argument to w ogóle system operacyjny:
+$ iknowhowtoif
+What is your favorite OS? Windows
+I used Windows once. What is that blue screen for?
+$ iknowhowtoif
+What is your favorite OS? MacOS
+Your OS can do anything as long as it is in AppStore.
+$ iknowhowtoif
+What is your favorite OS? Linux
+Linux is free if your time is worthless.
+$ iknowhowtoif
+What is your favorite OS? Qubes
+Is Qubes an operating system?
+
+5. Napisać skrypt powłoki iknowhowtofor który wypisze w pętli:
+$ iknowhowtofor
+I used Windows
+I used MacOS
+I used Linux
+I must try BSD.
